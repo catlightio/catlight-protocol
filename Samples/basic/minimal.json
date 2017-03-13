@@ -1,0 +1,31 @@
+{
+    "protocol": "https://catlight.io/protocol/v1.0/basic",
+    "id": "myAwesomeServer/12345678-1234-4567-abcd-123456789abc",
+    "name": "My Server",
+    "spaces": [
+        {
+            "id": "super-project",
+            "name": "Super Project",
+            "buildDefinitions": [
+                {
+                    "id": "nightly-build",
+                    "name": "Nightly Integration Build",
+                    "branches": [
+                        {
+                            "id": "~default",
+                            "builds": [
+                                {
+                                    "id": "100",
+                                    "status": "Succeeded",
+                                    "startTime": "2017-01-25T17:30:10.000Z",
+                                    "finishTime": "2017-01-25T17:30:20.000Z",
+                                }
+                            ]
+
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,154 @@
+{
+    "protocol": "https://catlight.io/protocol/v1.0/basic",
+    "id": "myAwesomeServer/12345678-1234-4567-abcd-123456789abc",
+    "webUrl": "http://myserver.example/dashboard",
+    "name": "My Server",
+    "currentUser": {
+        "id": "tim95",
+        "name": "Tim Drake"
+    },
+    "spaces": [
+        {
+            "id": "super-project",
+            "name": "Super Project",
+            "webUrl": "http://myserver.example/super-project",
+
+            "buildDefinitions": [
+                {
+                    "id": "nightly-build",
+                    "name": "Nightly Integration Build",
+                    "webUrl": "http://myserver.example/super-project/nightly-build/view",
+                    "folder": "build folder/subfolder",
+                    "branches": [
+                        {
+                            "id": "develop",
+                            "builds": [
+                                {
+                                    "id": "100",
+                                    "webUrl": "http://myserver.example/super-project/nightly-build/100",
+                                    "status": "Succeeded",
+                                    "startTime": "2017-01-25T17:30:10.000Z",
+                                    "finishTime": "2017-01-25T17:30:20.000Z",
+                                    "triggeredByUser": {
+                                        "id": "tim95",
+                                        "name": "Tim Drake"
+                                    },
+                                    "contributors": [
+                                        {
+                                            "id": "jgordon",
+                                            "name": "James Gordon"
+                                        }
+                                    ]
+                                }, {
+                                    "id": "101",
+                                    "webUrl": "http://myserver.example/super-project/nightly-build/101",
+                                    "status": "Running",
+                                    "startTime": "2017-01-25T17:40:10.000Z",
+                                    "triggeredByUser": {
+                                        "id": "jgordon",
+                                        "name": "James Gordon"
+                                    }
+                                }
+                            ]
+
+                        }, {
+                            "id": "features/new-searchlight",
+                            "builds": [
+                                {
+                                    "id": "300",
+                                    "webUrl": "http://myserver.example/super-project/nightly-build/300",
+                                    "status": "Succeeded",
+                                    "startTime": "2017-01-25T16:30:10.000Z",
+                                    "finishTime": "2017-01-25T16:30:20.000Z",
+                                    "triggeredByUser": {
+                                        "id": "tim95",
+                                        "name": "Tim Drake"
+                                    }
+                                }
+                            ]
+
+                        }
+                    ]
+                },
+                {
+                    "id": "second-build",
+                    "name": "Second Integration Build",
+                    "webUrl": "http://myserver.example/super-project/second-build/view",
+                    "branches": [
+                        {
+                            "id": "master",
+                            "builds": [
+                                {
+                                    "id": "600",
+                                    "webUrl": "http://myserver.example/super-project/second-build/600",
+                                    "status": "Failed",
+                                    "startTime": "2017-02-25T17:30:10.000Z",
+                                    "finishTime": "2017-02-25T17:30:20.000Z",
+                                    "triggeredByUser": {
+                                        "id": "tim95",
+                                        "name": "Tim Drake"
+                                    }
+                                },
+                                {
+                                    "id": "601",
+                                    "webUrl": "http://myserver.example/super-project/second-build/601",
+                                    "status": "Succeeded",
+                                    "startTime": "2017-02-25T17:40:10.000Z",
+                                    "finishTime": "2017-02-25T17:45:20.000Z",
+                                    "triggeredByUser": {
+                                        "id": "tim95",
+                                        "name": "Tim Drake"
+                                    }
+                                }
+                            ]
+
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "second-project",
+            "name": "Second Project",
+            "webUrl": "http://myserver.example/second-project",
+            "buildDefinitions": [
+                {
+                    "id": "daily-build",
+                    "name": "Daily Build",
+                    "webUrl": "http://myserver.example/second-project/daily-build/view",
+                    "branches": [
+                        {
+                            "id": "develop",
+                            "builds": [
+                                {
+                                    "id": "400",
+                                    "webUrl": "http://myserver.example/second-project/daily-build/400",
+                                    "status": "Succeeded",
+                                    "startTime": "2017-01-25T17:30:10.000Z",
+                                    "finishTime": "2017-01-25T17:30:20.000Z",
+                                    "triggeredByUser": {
+                                        "id": "jgordon",
+                                        "name": "James Gordon"
+                                    }
+                                },
+                                {
+                                    "id": "401",
+                                    "webUrl": "http://myserver.example/second-project/daily-build/401",
+                                    "status": "PartiallySucceeded",
+                                    "startTime": "2017-02-25T17:40:10.000Z",
+                                    "finishTime": "2017-02-25T17:50:20.000Z",
+                                    "triggeredByUser": {
+                                        "id": "tim95",
+                                        "name": "Tim Drake"
+                                    }
+
+                                }
+                            ]
+
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
