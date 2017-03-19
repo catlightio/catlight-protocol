@@ -51,7 +51,7 @@ Server id must be globally unique and should not change.
 
 How to choose server id?
 * For online services, you can use your domain name, e.g. "myserver.com"
-* For installed servers, use your domain or product name + unique installation id. For example, "myserver.com/3A5126E7-EE74-48E4-9997-1C1DE52BA711". If your server does not have unique id, you can generate a GUID during installation and save it configuration file. 
+* For installed servers, use your domain or product name + unique installation id. For example, "myserver.com/3A5126E7-EE74-48E4-9997-1C1DE52BA711". If your server does not have unique id, you can generate a GUID during installation and save it to configuration file. 
 
 
 Try to keep the id shorter than 100 symbols. If your server has a built-in unique id that is very long, you can use a hash sum of it that should be shorter.
